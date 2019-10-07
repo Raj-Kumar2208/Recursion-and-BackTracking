@@ -1,0 +1,20 @@
+Consider an array A of size N. You start from the index 0 and your goal is to reach index N-1.
+in exactly M moves.
+
+At any index, you can move forward or backward by a number of steps that is equal to a prime divisor of the value which exists at that index. You cannot go beyond the array while going forward or backward.
+
+Write a program to determine whether it is possible to reach index N-1 in M moves.
+
+Sample Input:
+3
+2 3 2
+1
+Sample Output:
+YES
+
+Sample Input:
+6
+3 2 2 2 2 2
+3
+Sample Output:
+NO
