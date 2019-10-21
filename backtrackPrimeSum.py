@@ -32,13 +32,12 @@ def solve_problem(num, prime, temp, sum_num):
     if (len(plist)==num or prime >= sum_num):
         return
     else:
-        while(temp < sum_num):
+        if(temp < sum_num):
             np = next_prime(prime)
             plist.append(str(np))
             solve_problem(num,np,temp+np,sum_num)
             plist.pop()
             solve_problem(num,np,temp,sum_num)
-            break
             
     
 
